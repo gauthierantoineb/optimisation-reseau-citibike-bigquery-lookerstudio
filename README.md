@@ -31,6 +31,20 @@ Le projet a été structuré en plusieurs étapes :
 
 ---
 
+## Dashboard Looker Studio
+
+Lien direct vers le dashboard :
+
+[Accéder au dashboard Looker Studio](https://datastudio.google.com/s/iDVOF3E-Aak)
+
+---
+
+## Aperçu du dashboard
+
+![Dashboard final](captures/dashboard_final_page_unique.png)
+
+---
+
 ## Résultat en 30 secondes
 
 J’ai construit une analyse opérationnelle de Citi Bike avec BigQuery et Looker Studio.
@@ -75,7 +89,7 @@ Ce projet vise donc à transformer l’historique des trajets en recommandations
 
 ## Question business
 
-> Quels sont les stations et les créneaux horaires à prioriser pour fluidifier la répartition des vélos dans le réseau Citi Bike ?
+> Quelles sont les stations et les créneaux horaires à prioriser pour fluidifier la répartition des vélos dans le réseau Citi Bike ?
 
 ---
 
@@ -113,7 +127,7 @@ Le grain brut principal est le trajet Citi Bike.
 
 ### Période étudiée
 
-Juillet 2013 à mai 2018.
+Juillet 2013 à mai 2018
 
 ### Limites du dataset
 
@@ -194,7 +208,7 @@ Il combine :
 - la régularité du problème ;
 - la fiabilité du signal.
 
-Formule conceptuelle :
+### Pondération du score
 
 - 35 % intensité du déséquilibre
 - 20 % activité
@@ -296,6 +310,12 @@ Le dashboard permet de :
 - Ajouter les données temps réel pour un système d’alerte en production.
 - Tester des modèles prédictifs horaires.
 - Optimiser les tournées de rééquilibrage par zone.
+
+---
+
+## Limite méthodologique importante
+
+Les recommandations reposent sur des patterns historiques de flux et non sur un stock temps réel des vélos.
 
 ---
 
